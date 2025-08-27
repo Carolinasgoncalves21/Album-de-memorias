@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background-color: #f9f6f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background: #8e44ad;
+  color: white;
+  font-size: 2.5em;
+  padding: 20px;
+  font-family: 'Great Vibes', cursive;
+}
+
+.album {
+  display: flex;
+  max-width: 1100px;
+  margin: 30px;
+  gap: 20px;
+}
+
+.foto-principal {
+  flex: 1;
+}
+
+.foto-principal img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.carrossel {
+  flex: 2;
+  overflow-x: auto;
+  display: flex;
+  gap: 15px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.carrossel img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.carrossel img:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  margin-top: 10px;
+  color: #5e3370;
+}
